@@ -1,0 +1,15 @@
+body{
+    margin: 0;
+    font-family: Arial;
+    background: linear-gradient(135deg, #0f172a, #1e293b);
+    color: white;
+}
+
+/* HERO */
+.hero{
+    height: 100vh;
+    display: flex;
+    flex-direction: coloum;
+    justify-content: center;
+    align-items: center;
+}
