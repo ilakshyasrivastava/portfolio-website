@@ -13,3 +13,50 @@ body{
     justify-content: center;
     align-items: center;
 }
+
+/* GRADIENT TEXT */
+.hero h1{
+    font-size: 3rem;
+    background: linear-gradient(90deg, #38bdf8, #a78bfa, #f472b6);
+    webkit-background-clip: text;
+    color: transparent;
+}
+
+.btn{
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: #38bdf8;
+    color: black;
+    text-decoration: none;
+    border-radius: 20px;
+}
+
+.btn:hover{
+    background: #a78bfa;
+}
+
+/* SECTIONS */
+section {
+    padding: 50px;
+    text-align: center;
+}
+
+/* PROJECT CARD */
+.projects{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card{
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 15px;
+    width: 20px;
+    transition: 0.3s;
+}
+
+.card:hover{
+    transform:scale(1.1);
+    background: rgba(255, 255, 255, 0.2)
+}
