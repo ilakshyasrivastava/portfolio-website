@@ -347,7 +347,7 @@ nav a{
     /* Navbar center + wrap */
     nav{
         justify-content: center;
-        flex-wrap: 1.2rem;
+        flex-wrap: wrap;
     }
 
     /* Profile text adjust */
@@ -380,5 +380,9 @@ nav a{
 
     .heading{
         font-size: 1.5rem;
+    }
+
+    .profile h2{
+        font-size: 1.1rem;
     }
 }
