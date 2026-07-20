@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     background-color: #1e1e1e;
     font-family: sans-serif;
@@ -183,7 +187,7 @@ nav a{
     background-color: #1e1e1e;
     text-align: center;
     margin-top: 20px;
-    transition: transform 0.3s ease, boxshadow 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 
 }
 
@@ -265,7 +269,7 @@ nav a{
     border: 2px solid #3a3a3a;
 }
 
-/* portfoliom */
+/* portfolio */
 
 .project-container{
     margin-top: 30px;
@@ -279,7 +283,7 @@ nav a{
     border-radius: 12px;
     border: 1px solid #3a3a3a;
     overflow: hidden;
-    transition: transform 0.5s ease, box-shadow 0.5 ease;
+    transition: transform 1s ease, box-shadow 1s ease;
 
 }
 
@@ -317,4 +321,64 @@ nav a{
     border-radius: 5px;
     font-size: 0.75rem;
     margin-right: 5px;
+}
+
+/* Responsive */
+
+@media (max-width: 786px) {
+
+    /* Main layout chane */
+    .main-container{
+        grid-template-columns: 1fr;
+        padding: 10px;
+    }
+
+    /* Sidebar */
+    .sidebar{
+        position: static;
+        height: auto;
+    }
+
+    /* Main content padding kam */
+    .main-content {
+        padding: 20px;
+    }
+    
+    /* Navbar center + wrap */
+    nav{
+        justify-content: center;
+        flex-wrap: 1.2rem;
+    }
+
+    /* Profile text adjust */
+    .profile h2{
+        font-size: 1.2rem;
+    }
+
+    /* skills grid mobile */
+    .grid-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Project 1 column */
+    .project-container{
+        grid-template-columns: 1fr;
+    }
+
+    /* Image height auto */
+    .project img{
+        height: auto;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    .grid-container{
+        grid-template-columns: 1fr;
+    }
+
+    .heading{
+        font-size: 1.5rem;
+    }
 }
